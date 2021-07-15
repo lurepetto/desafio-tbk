@@ -1,0 +1,33 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">DNI</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Usuario</th>
+        <th scope="col">Email</th>
+        <th scope="col">Rol</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <th scope="row">{{ user.dni }}</th>
+        <td>{{ user.name + " " + user.lastname }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.mail }}</td>
+        <td>TODO</td>
+        <td>
+          <i class="fas fa-edit cursor" routerLink="edit"></i>
+        </td>
+        <td>
+          <i
+            class="fas fa-trash-alt cursor text-danger"
+            (click)="eliminarUsuario(user.dni)"
+          ></i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

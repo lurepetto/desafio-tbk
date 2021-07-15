@@ -1,0 +1,15 @@
+.card {
+  margin: 1rem;
+  cursor: pointer;
+}
+.card-img-top {
+  margin: 30px auto 0;
+  // margin-left: 30px;
+  height: 180px;
+  width: 180px;
+  transition: transform 0.4s;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05);
+}
